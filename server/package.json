@@ -1,0 +1,48 @@
+{
+  "name": "photo-sharing-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "jest": {
+    "transformIgnorePatterns": [],
+    "testFileExtensions": [
+      "spec.js"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "collectCoverage": true
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "dev": "node --experimental-specifier-resolution=node app.js",
+    "debug": "node --experimental-specifier-resolution=node app.js"
+  },
+  "author": "AnoopKNarayanan",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-syntax-import-attributes": "^7.22.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jest": "^29.5.0",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mongodb-memory-server": "^8.12.2",
+    "mongoose": "^7.2.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.3",
+    "lit": "^2.6.1"
+  }
+}

@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Proxima Nova,helvetica neue,helvetica,arial,sans-serif;
+    color: #212124;
+    background-color: #f3f5f6;
+}
+
+.container {
+    max-width: 80%;
+    padding: 0 !important;
+}
+
+.validation-errors {
+    color: #e2292b;
+    font-size: .75rem;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+
+.spinner-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    color: rgb(0, 99, 220);
+    height: 5rem;
+    width: 5rem;
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.dot {
+    height: 0.55rem;
+    width: 0.55rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bg-blue {
+    background-color: rgb(0, 99, 220);
+}
+
+.bg-pink {
+    background-color: rgb(255, 0, 132);
+}
+

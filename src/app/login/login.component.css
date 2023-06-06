@@ -1,0 +1,43 @@
+.main {
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.register-card {
+    width: 22rem;
+}
+
+.form-floating label {
+    transition: all .2s ease-in-out;
+    color: #898989;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control:focus~label {
+    color: #128fdc;
+}
+
+.bg-grey-light {
+    background-color: #e3e3e3;
+}
+
+.login-font {
+    font-size: .875rem;
+}
+
+.login-link {
+    text-decoration: none;
+}
+
+.top-margin {
+    margin-top: 5rem;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}

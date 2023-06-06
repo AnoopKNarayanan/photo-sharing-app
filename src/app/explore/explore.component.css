@@ -1,0 +1,47 @@
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.empty-wrapper {
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+.uploader-name {
+    font-weight: 600;
+}
+
+.my-photos .col {
+    padding-right: 0 !important;
+}
+
+.photo-details {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 2px #000;
+    white-space: nowrap;
+    margin-top: 17rem;
+    opacity: 0;
+}
+
+.photo-wrapper {
+    position: relative;    
+}
+
+.photo-wrapper:hover .photo-details{
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}

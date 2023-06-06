@@ -1,0 +1,16 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGO_URL": "mongodb://127.0.0.1:27017/PhotoSharing",
+        "JWT_SECRET": "Secret#123",
+        "JWT_EXP": "2h",
+        "NODE_PATH": "../node_modules"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGO_URL": "mongodb://127.0.0.1:27017/PhotoSharing",
+        "JWT_SECRET": "Secret#123",
+        "JWT_EXP": "2h",
+        "NODE_PATH": "../node_modules"
+    }
+}

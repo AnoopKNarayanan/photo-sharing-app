@@ -1,0 +1,37 @@
+<header class="w-100 sticky-top">
+    <nav class="navbar navbar-expand-lg w-80 m-auto">
+        <div class="w-100">
+            <div class="nav-top-row d-flex">
+                <a class="navbar-brand" href="#" routerLink="/dashboard">
+                    <span class="dot bg-blue"></span>
+                    <span class="dot bg-pink ms-1"></span>
+                    pShare
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent" *ngIf="['/you', '/explore', '/dashboard'].includes(router.url)">
+                    <ul class="navbar-nav mb-2 mb-lg-0 w-100 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/you" routerLinkActive="active-link">You</a>
+                        </li>     
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/explore" routerLinkActive="active-link">Explore</a>
+                        </li>  
+                        <li class="nav-item ms-auto">
+                            <button class="nav-link" title="Upload" (click)="fileUpload.click()">
+                                <i class="upload-icon d-none d-lg-block"></i>
+                                <span class="upload-link">Upload Photos</span>
+                                <input #fileUpload type="file" class="d-none" (change)="onFileSelected($event)" accept="image/png, image/gif, image/jpeg, image/jpg">
+                            </button>
+                        </li>  
+                        <li class="nav-item">
+                            <button class="nav-link" (click)="logout()">Log out</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

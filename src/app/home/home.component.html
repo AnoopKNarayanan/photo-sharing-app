@@ -1,0 +1,43 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <nav class="navbar navbar-expand-lg home-nav">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-between w-100 ms-4">
+                <a class="navbar-brand" href="/">
+                    <span class="dot bg-blue"></span>
+                    <span class="dot bg-pink ms-1"></span>
+                    pShare
+                </a>
+      
+              <div class="text-end me-3">
+                <a href="#" class="me-4 login-btn" routerLink="/login">Log In</a>
+                <button type="button" class="sign-up-btn" (click)="signUp()">Sign Up</button>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel-inner">
+        <div class="carousel-item active vh-100">
+            <img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Europes_best_View_Fabian_Fortmann.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item vh-100">
+            <img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Fantasy_Island_Daniel_Cheong.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item vh-100">
+            <img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Tree_and_Morning_Mist_Jos_Buurmans.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item vh-100">
+            <img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Sheep_in_the_woods_II_James_Mills.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item vh-100">
+            <img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/If_Only_We_Could_Turn_Back_Time_Anna_Kwa.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item vh-100">
+            <img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Cool_Power_commended-LPOTY_UK_Steve_Cole.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+    </div>
+    <div class="home-content w-100">
+        <h1 class="insp-header mb-4">Find your inspiration.</h1>
+        <h3 class="insp-content mb-5 d-lg-block d-none">Join the community, home to tens of billions of photos and 2 million groups.</h3>
+        <button type="button" class="btn btn-lg start-btn" (click)="signUp()">Start for free</button>
+    </div>
+</div>

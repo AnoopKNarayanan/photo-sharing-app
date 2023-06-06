@@ -1,0 +1,32 @@
+<ng-container class="d-flex justify-content-center" *ngIf="loading$ | async">
+    <div class="overlay"></div>
+    <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+</ng-container>
+<div class="container mt-5">
+    <div *ngIf="users$ | async as users">
+        <ng-container *ngIf="users.users.length > 0; else emptyContainer">
+            <div class="shared-container mb-3" *ngFor="let user of users.users">
+                <ng-container *ngIf="user.photos.length > 0">
+                    <h1 class="title mb-3">Uploaded by <span class="uploader-name text-capitalize">{{user.name}}</span></h1>
+                    <div class="row my-photos">
+                        <div class="col-lg-4 col-md-6 mb-3" *ngFor="let photo of user.photos">
+                            <div class="d-flex photo-wrapper">
+                                <img src="data:{{photo.mimetype}};base64,{{photo.data}}" class="card-img-top" style="min-height: 19rem; max-height: 19rem;">
+                                <div class="photo-details ms-3 d-flex w-100">
+                                    <div>{{photo.name}}</div>                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>            
+            </div>     
+        </ng-container>   
+    </div>
+    <ng-template #emptyContainer>
+        <div class="empty-wrapper">
+            <h3>Nothing to display</h3> 
+        </div>
+    </ng-template>
+</div>

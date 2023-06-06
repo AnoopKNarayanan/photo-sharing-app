@@ -1,0 +1,29 @@
+<ng-container class="d-flex justify-content-center" *ngIf="loading$ | async">
+    <div class="overlay"></div>
+    <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+</ng-container>
+<div class="container" *ngIf="userData$ | async as userData">
+    <div class="people-card my-4 pb-3 pe-2" *ngIf="users$ | async as users">
+        <h1 class="title p-3">People to follow</h1>
+        <div class="row px-3 py-1">
+            <div class="col-lg-4 col-md-6 col-sm-2 fw-normal overflow-hidden text-capitalize text-truncate text-nowrap mb-4" *ngFor="let user of users.users">
+                <div class="photo-container">
+                    <div class="photo"></div>
+                </div>
+                <div class="details-container mt-3 d-flex">
+                    <div class="avatar me-2"></div>
+                    <div class="full-name">{{user.name}}</div>
+                    <div class="ms-auto">
+                        <button class="btn btn-outline-primary following-btn d-none d-lg-block" *ngIf="userData.user.following.includes(user._id); else follow_btn" (click)="follow(user._id, false)">Following</button>                        
+                        <ng-template #follow_btn><button class="btn btn-primary follow-btn d-none d-lg-block" (click)="follow(user._id, true)">Follow</button></ng-template>                        
+
+                        <button class="btn btn-outline-primary following-icon d-lg-none d-block" *ngIf="userData.user.following.includes(user._id); else follow_ico" (click)="follow(user._id, false)"></button>                        
+                        <ng-template #follow_ico><button class="btn btn-primary follow-icon d-lg-none d-block" (click)="follow(user._id, true)"></button></ng-template>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
