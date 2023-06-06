@@ -2,14 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
+## Pre-requisites
+
+[Node](https://nodejs.org/en) and [MongoDB](https://www.mongodb.com/) should be installed on your system.
+
+
 ## How to build and start the project
 
-*Downloard/clone the repository
-*Open terminal/command prompt
-*cd (change directory) in to the project folder
-*Run npm install in your terminal
-*Run npm start to start the project
-*Open your browser and navigate to http://localhost:4200/
+* Downloard/clone the repository
+* Open `server/config/config.json` in any editor
+* Change the value of `MONGO_URL` to your MongoDB URL and save the file
+* Open terminal/command prompt
+* cd (change directory) in to the project folder
+* Run `npm install` in your terminal
+* Run `npm start` to start the project
+* Open your browser and navigate to `http://localhost:4200/`
 
 ## Code scaffolding
 
