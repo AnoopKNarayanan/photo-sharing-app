@@ -10,7 +10,6 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthInterceptor } from './util/auth.interceptor';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExploreComponent } from './explore/explore.component';
 import { YouComponent } from './you/you.component';
@@ -22,7 +21,6 @@ import { YouComponent } from './you/you.component';
     LoginComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent,
     DashboardComponent,
     ExploreComponent,
     YouComponent
